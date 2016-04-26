@@ -1,2 +1,2 @@
 # doritos
-Simple operating system for fun!
+Assembly & C based Operating System

@@ -30,3 +30,11 @@
 
 # Debug files
 *.dSYM/
+
+# Assembler
+*.[sS]
+*.bc
+
+# Image files
+*.img
+*.bin
