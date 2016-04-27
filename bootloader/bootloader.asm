@@ -46,7 +46,7 @@ read_init:
 read_data:
 	cmp di, 0
 	je read_complete
-	sub di, 1
+	dec di
 
 	mov ah, 2
 	mov al, 1
@@ -60,10 +60,8 @@ read_data:
 	add si, 0x0020
 	mov es, si
 
-	mov al, byte[sector_number]
-	add al, 1
-	mov byte[sector_number], al
-	cmp al, 19
+	add byte[sector_number], 1
+	cmp byte[sector_number], 19
 	jl read_data
 
 	xor byte[head_number], 1
