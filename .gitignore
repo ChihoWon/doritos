@@ -32,7 +32,7 @@
 *.dSYM/
 
 # Assembler
-*.[sS]
+#*.[sS]
 *.bc
 
 # Image files

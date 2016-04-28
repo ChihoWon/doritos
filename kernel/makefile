@@ -1,7 +1,7 @@
-all: virtualimage.bin
+all: kernel.bin
 
-virtualimage.bin: virtualimage.asm
-	nasm -o virtualimage.bin virtualimage.asm
+kernel.bin: Entry.s
+	nasm -o kernel.bin $<
 
 clean:
-	rm -f virtualimage.bin
+	rm -f kernel.bin

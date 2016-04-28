@@ -4,7 +4,7 @@
 [bits 16]
 
 jmp 0x07C0:start
-total_sector: dw 1024
+total_sector: dw 1
 
 start:
 	mov ax, CODE_SEG
@@ -78,7 +78,7 @@ read_complete:
 	push 45
 	call printxy
 	add sp, 6
-
+	
 	jmp 0x1000:0x0000
 
 
@@ -158,7 +158,7 @@ disk_error_handler:
 ; Data
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Message strings
-boot_message: db '[!] Mentos OS Bootloader', 0
+boot_message: db '[!] Doritos OS Bootloader', 0
 disk_loading: db '[!] Kernel image loading ...', 0
 disk_err_msg: db '[fail]', 0
 disk_suc_msg: db '[pass]', 0
