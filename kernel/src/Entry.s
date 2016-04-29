@@ -34,7 +34,9 @@ protected_mode:
   call printxy
   add esp, 12
 
-  jmp $   ; halt
+  jmp dword 0x8: 0x10200
+
+  ; jmp $   ; halt
 
 ; printxy 32 bit ver.
 printxy:

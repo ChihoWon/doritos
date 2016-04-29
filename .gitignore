@@ -11,6 +11,7 @@
 # Libraries
 *.lib
 *.a
+*.x
 *.la
 *.lo
 
@@ -39,5 +40,6 @@
 *.img
 *.bin
 
-# Backup file
+# etc
 *.bak
+*.dep

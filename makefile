@@ -17,7 +17,7 @@ Kernel:
 Disk.img: bootloader kernel
 	@echo [!] Building disk image ...
 
-	cat bootloader/bootloader.bin kernel/kernel.bin > disk.img
+	cat bootloader/bootloader.bin kernel/Kernel32.bin > disk.img
 
 	@echo [!] Build sequence complete
 

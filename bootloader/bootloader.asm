@@ -4,7 +4,7 @@
 [bits 16]
 
 jmp 0x07C0:start
-total_sector: dw 1
+total_sector: dw 3
 
 start:
 	mov ax, CODE_SEG
@@ -78,7 +78,7 @@ read_complete:
 	push 45
 	call printxy
 	add sp, 6
-	
+
 	jmp 0x1000:0x0000
 
 
